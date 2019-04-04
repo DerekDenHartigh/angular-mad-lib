@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="madLib">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MadLibs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section ng-controller="MyCtrl">
+    <h1>MAAAAD Libs</h1>
+    Nouns: <input type="text" ng-model="noun1"/>, <input type="text" ng-model="noun2"/>, <input type="text" ng-model="noun3"/>, <input type="text" ng-model="noun4"/>, & <input type="text" ng-model="noun5"/>
+    <br>
+    Verbs: <input type="text" ng-model="verb1"/>, <input type="text" ng-model="verb2"/>, <input type="text" ng-model="verb3"/>, & <input type="text" ng-model="verb4"/>
+    <br>
+    Adverbs: <input type="text" ng-model="adverb1"/> & <input type="text" ng-model="adverb2"/>
+    <br>
+    Adjectives: <input type="text" ng-model="adj1"/>, <input type="text" ng-model="adj2"/>, <input type="text" ng-model="adj3"/>, & <input type="text" ng-model="adj4"/>
+    <br>
+    Place: <input type="text" ng-model="place">
+
+    <p>One {{adj1 ? adj1 : '_______'}} day, I was {{verb1 ? verb1 : '_______'}} {{adverb1 ? adverb1 : '_______'}} to the {{place ? place : '_______'}}, when all of a sudden a {{adj2 ? adj2 : '_______'}} {{noun1 ? noun1 : '_______'}} came {{verb2 ? verb2 : '_______'}}ing {{adverb2 ? adverb2 : '_______'}} at me outta nowhere wielding a {{noun3 ? noun3 : '_______'}}.  I was rather surprised so I grabbed my {{noun2 ? noun2: '_______'}} in one hand and a {{noun4 ? noun4: '_______'}} in the other hand and started {{verb3 ? verb3: '_______'}}ing at it.  No surprise the {{noun1 ? noun1 : '_______'}} became quite {{adj3 ? adj3 : '_______'}} and started {{verb3 ? verb3: '_______'}}ing right back at me with a {{noun5 ? noun5: '_______'}}!  Well, my {{adj4 ? adj4 : '_______'}} self was not about that, so I turned tail and {{verb4 ? verb4 : '_______'}} back home!
+    </p>
+  </section>
+
+  <script src="https://code.angularjs.org/1.7.8/angular.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.controller.js"></script>
+</body>
+</html>
